@@ -1,5 +1,3 @@
-alert("app.js loaded");
-
 (function () {
   "use strict";
 
@@ -449,3 +447,4 @@ alert("app.js loaded");
     }
   });
 })();
+
