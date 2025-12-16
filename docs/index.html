@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guess the Formula</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <div class="title">GUESS THE FORMULA</div>
+      <div class="meta" id="metaLine"></div>
+      <div class="tip">
+        Tip: press <span class="kbd">Enter</span> in the x box to generate output, or in the guess box to submit.
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div class="cardTitle">1) Choose a value for x and view the output</div>
+
+        <div class="row">
+          <label class="label" for="xInput">x (integer):</label>
+          <input id="xInput" class="input" inputmode="numeric" placeholder="e.g. 10" />
+          <button id="genBtn" class="btn btnDark">Generate Output</button>
+        </div>
+
+        <div class="pill mono"><span>x</span> = <span id="xPill">—</span></div>
+        <div class="output" id="outputLine">Output: —</div>
+        <div class="hint">Math evaluates left-to-right. Division is not allowed.</div>
+      </article>
+
+      <article class="card">
+        <div class="cardTitle">2) Guess the hidden 8-tile formula</div>
+
+        <div class="row">
+          <input id="guessInput" class="input mono" placeholder="Example: +12*7-3" autocapitalize="none" />
+          <button id="guessBtn" class="btn btnBlue">Submit Guess</button>
+        </div>
+
+        <div class="hint">
+          Your guess must be exactly <b>8 characters</b> after adding x automatically.
+          Numbers can be <b>1–3 digits</b>. Operators: <b>+</b>, <b>-</b>, <b>*</b>.
+        </div>
+
+        <div class="tileGrid" id="tileGrid"></div>
+        <div class="feedback" id="feedback">Enter x and generate an output to begin.</div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="small">
+        Daily puzzle is based on the date in <b>America/New_York</b>.
+      </div>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
