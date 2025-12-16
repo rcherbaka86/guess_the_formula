@@ -1,3 +1,5 @@
+alert("app.js loaded");
+
 (function () {
   "use strict";
 
