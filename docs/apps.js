@@ -242,7 +242,7 @@
   function updateMeta() {
     safeText(
       el.metaLine,
-      "Daily puzzle • Date: " + currentDay + " (" + TZ_NAME + ") • 8 tiles • 2–3 operations • numbers 1–3 digits • 5 attempts"
+      "Daily puzzle • Date: " + currentDay + " • 5 attempts"
     );
   }
 
@@ -447,4 +447,5 @@
     }
   });
 })();
+
 
