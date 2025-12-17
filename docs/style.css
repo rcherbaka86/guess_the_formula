@@ -52,6 +52,7 @@ body{
 }
 
 .tip{
+  text-align:center;
   margin-top: 8px;
   color: var(--sub);
   font-size: 12px;
@@ -220,3 +221,4 @@ body{
 .mono{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
